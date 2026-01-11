@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+.gyankosh-logo {
+  font-family: 'Titan One', cursive;
+  font-size: 50px;
+  font-weight: bold;
+  color: #bc0707;
+  padding-top: 25px;
+  text-shadow: 2px 2px 6px rgba(7, 74, 198, 0.7);
+  animation: gyankoshBounce 3s ease-out forwards;
+  display: inline-block;
+  background: linear-gradient(to right, #e5ddb3, #e9c096);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgb(235, 120, 38);
+}
+
+
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 999;
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff;
+  display: flex;             
+  align-items: stretch;      
+}
+.nav-image {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  overflow: hidden;
+}
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fcfcfe;
+}
+.image-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* perfectly center */
+  color: red;
+  opacity:1;
+  font-weight: bold;
+  font-size: 24px; /* or whatever size you like */
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.nav-content {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-container.hidden {
+  transform: translateY(-100%);
+}
+
+.navbar-container.visible {
+  transform: translateY(0);
+}
+
+.top-bar {
+  background-color: #5fa7f3;
+  color: #eee;
+  font-size: 18px;
+  padding: 5px 20px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between; /* splits left and right */
+  align-items: center;
+}
+
+ .top-bar span {
+  margin: 0 4px; /* or whatever gap you want */
+}
+.top-left{
+    margin-left:130px;
+}
+.top-left span {
+  margin: 0 19px;
+  
+}
+
+.top-right {
+  display: flex;
+  gap: 15px; /* space between Live Chat and Login */
+}
+
+
+.main-navbar {
+  display: flex;
+  justify-content: space-between;
+  height:100px;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fcfcfe;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  
+}
+.nav-links a.active-link {
+  color: rgb(223, 118, 20);
+  font-weight: 700;
+  border-bottom: 2px solid #8ebff1;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #1e3a8a;
+}
+ 
+.nav-actions {
+  display: flex;
+  gap: 20px;  /* space between each icon */
+}
+
+.nav-actions a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;             /* circle size */
+  height: 40px;
+  border-radius: 50%;      /* make it circular */
+  background-color: #f0f0f0; /* light background for circle */
+  text-decoration: none;
+  color: #333;            /* default icon color */
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.nav-actions a:hover {
+  background-color: #e0e0e0; /* slight hover effect */
+}
+.nav-actions input {
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.nav-actions svg {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav-actions svg:hover {
+  color: #1e3a8a;
+}
+.offer{
+      background: linear-gradient(to right, white, rgb(253, 144, 2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  font-weight: 500;
+}
+.top-bar span{
+      background: linear-gradient(to right, rgb(234, 233, 231), rgba(253, 144, 2, 0.964));
+      opacity:1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-item {
+  position: relative;
+  cursor: pointer;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+.nav-item a:hover {
+   color:rgb(223, 118, 20);
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width:144px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(178, 173, 173, 0.2);
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover .dropdown,
+.nav-item .dropdown.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  width:144px;
+
+}
+
+.dropdown a {
+  padding: 5px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown a:hover {
+  background-color:rgba(22, 82, 223, 0.7);
+  color:white;
+}
+
+/* ---------------------------------------- */
+/* 📱 Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .navbar-container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-image {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-content {
+    width: 100%;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .top-left {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .top-right {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 8px;
+  }
+
+  .main-navbar {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-actions {
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+/* ---------------------------------------- */
+/* 📱 Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+  .gyankosh-logo {
+    font-size: 32px;
+    padding-top: 10px;
+  }
+
+  .top-left {
+    margin-left: 0;
+  }
+
+  .main-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .nav-actions {
+    gap: 10px;
+  }
+}
+
+/* ---------------------------------------- */
+/* 💻 Laptop (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 20px;
+  }
+
+  .top-bar {
+    font-size: 16px;
+  }
+
+  .top-left span {
+    margin: 0 10px;
+  }
+}
+
+/* ---------------------------------------- */
+/* 🖥 Desktop (min-width: 1025px) */
+/* (Optional, only if you want to enhance desktop experience) */
+@media (min-width: 1025px) {
+  .navbar-container {
+    height: 150px;
+  }
+
+  .nav-links {
+    gap: 30px;
+  }
+
+  .nav-actions a {
+    font-size: 18px;
+  }
+}

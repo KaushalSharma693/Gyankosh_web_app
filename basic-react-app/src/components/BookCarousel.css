@@ -1,0 +1,184 @@
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  background-color:#f9f9f9; 
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  width: calc(100% * NUMBER_OF_SLIDES); /* IMPORTANT */
+}
+
+
+.carousel-slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.book-card {
+  flex: 0 0 253px; /* Fixed width */
+  background: white;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.7s ease;
+  margin-right: 21px; 
+  height: 365px;       
+}
+
+.book-card:hover {
+  transform: scale(1.06);
+  z-index: 5;
+}
+
+.book-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.book-card h4 {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #333;
+}
+
+.book-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.book-card span {
+  display: block;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 5px;
+}
+
+.book-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin: 8px 0 4px;
+}
+
+.book-author {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.book-desc {
+  font-size: 13px;
+  color: #4e4c4c;
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.book-price {
+  font-weight: bold;
+  color: #f0730dd7 !important;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+  background-color: #5ca4f1;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+}
+.carousel-section {
+  padding: 20px 0;  
+background-color: #f9f9f9; 
+}
+.carousel-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.carousel-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+}
+.carousel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.carousel-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+.explore-btn {
+  position: relative;
+  padding: 15px 20px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  color: #0e0e0e;
+  border: 2px solid #afaead;
+  border-radius: 25px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.4s ease;
+}
+
+.explore-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(120deg, #f76a0c, #ee7d0c, #ff8c00);
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 0;
+}
+
+.explore-btn:hover::before {
+  transform: translateX(0);
+}
+
+.explore-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.explore-btn:hover {
+  color: white;
+  border-color: #ff8c00;
+}
+
+.explore-btn i {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.explore-btn:hover i {
+  transform: translateX(4px);
+}

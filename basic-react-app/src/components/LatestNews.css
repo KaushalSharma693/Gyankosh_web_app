@@ -1,0 +1,113 @@
+.latest-news-section {
+  padding: 60px 20px;
+  background-color: #a1c2e3;;
+  text-align: center;
+}
+
+.news-title {
+  font-size: 38px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.news-subtext {
+  font-size: 16px;
+  color: #474646;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.news-card-wrapper {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.news-card {
+  width: 270px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-img-container {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+}
+
+.news-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.news-card:hover .news-img {
+  transform: scale(1.1);
+  filter: brightness(0.85) blur(1px);
+}
+
+.news-meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px 5px;
+  font-size: 13px;
+  color: #141414;
+  font-weight: 600;
+}
+
+.news-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+  padding: 8px 15px 8px;
+  line-height: 1.4;
+}
+.like-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  padding: 6px 8px;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #f25454;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 3;
+  box-shadow: 0 2px 60px rgba(0,0,0,0.1);
+}
+
+.news-card:hover .like-icon {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.news-title i{
+    color:rgb(254, 257, 257);
+}
+.read-more{
+    color:#626161;
+      display: inline-block;
+        text-align: left;
+        text-decoration: none;
+          margin-top: 12px;
+       transition: color 0.3s ease;
+         font-weight: 500;
+  font-size: 16px;
+}
+.read-more:hover {
+  color: #0056b3;
+  text-decoration: none;
+}

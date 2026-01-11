@@ -1,0 +1,31 @@
+.category-shelf {
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.category-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+/* Makes the cards scroll horizontally */
+.book-scroll-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 20px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 12px;
+  white-space: nowrap;        /* prevents wrapping */
+}
+
+/* Ensures each card stays fixed width */
+.book-scroll-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 260px;               /* wide card */
+}

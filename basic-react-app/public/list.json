@@ -1,0 +1,37 @@
+[
+  {
+   "id": 1,
+   "title": "Book One", 
+   "author": "Author A", 
+   "price": "$10", 
+   "img":"book2.avif"
+  },
+  { 
+    "id": 2,
+   "title": "Book Two",
+    "author": "Author B", 
+    "price": "$12", 
+    "img": "book2.avif" 
+  },
+  { 
+    "id": 3,
+   "title": "Book Three",
+    "author": "Author C", 
+    "price": "$8", 
+    "img": "bookie.png"
+  },
+  {
+   "id": 4, 
+   "title": "Book Four",
+   "author": "Author D",
+    "price": "$15",
+     "img": "book3.avif"
+ },
+  { 
+   "id": 5, 
+   "title": "Book Five",
+   "author": "Author E",
+    "price": "$9", 
+    "img": "book4.avif"
+ }
+]

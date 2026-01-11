@@ -1,0 +1,131 @@
+.testimonial-section {
+  padding: 50px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.testimonial-title {
+  font-size: 38px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial-card {
+  position: relative;
+  background: white;
+  width: 300px;
+  height:250px;
+  padding: 20px;
+  border-radius: 10px;
+  border-top: 3px solid orange;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  z-index: 0;
+}
+
+/* Butterfly Hover Effect */
+.testimonial-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  background: rgb(197, 224, 238);
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+  transform: translateX(-50%) scaleX(1);
+  transform-origin: center;
+}
+
+.testimonial-card:hover::before {
+  width: 100%;
+  background: #a1c2e3;
+}
+
+.testimonial-card:hover {
+  color: white;
+}
+
+.testimonial-card:hover .testimonial-text,
+.testimonial-card:hover .client-info h4,
+.testimonial-card:hover .client-info p {
+  color: white;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.client-img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #eee;
+}
+
+.client-info h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.client-info p {
+  margin: 0;
+  font-size: 13px;
+  color: #777;
+}
+
+.company-logo {
+  width: 65px;
+  height: auto;
+  object-fit: contain;
+}
+/* Keeps the track full-width and flexible */
+.testimonial-carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 0 25px; /* You can adjust for left/right space */
+  box-sizing: border-box;
+}
+
+.testimonial-track {
+  display: flex;
+  gap: 25px; /* Controls space between cards */
+  width: max-content;
+  transition: transform 0.6s ease-in-out;
+}
+.rating-stars {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #ff9800;
+  display: flex;
+  gap: 2px;
+}

@@ -1,0 +1,126 @@
+.top-category-section {
+  padding: 30px;
+  background: linear-gradient(to left, #85b9f1, #a3c4e7);
+  position: relative;
+  height: 420px;
+}
+.top-category-section::before {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  border: 2px solid rgb(144, 135, 135);
+  border-radius: 8px;
+  margin: 0 15px;
+  z-index: -1111;
+  background: transparent;
+}
+
+.category-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 120px;
+}
+
+.category-card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 240px;
+  height:240px;
+  text-align: center;
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.circle {
+  width: 210px;
+  height: 210px;
+  margin: 12px auto 10px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.rotating-border {
+  width: 100%;
+  height: 100%;
+  border: 3px dashed #2b0303;
+  border-radius: 50%;
+  animation: rotateCircle 8s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.image-fixed {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.image-fixed img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@keyframes rotateCircle {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.category-card p {
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 24px;
+  color: #161616;
+  opacity:1;
+  margin-right: 15px;
+}
+
+.section-title {
+  position: absolute;
+  z-index: 11;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 700;
+  font-size: 35px;
+  color: #0b0b0b;
+  padding: 0 20px;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+   z-index: 11;
+  top: 50%;
+  left: -20px;
+  right: -20px;
+  height: 120%;
+  background-color: #99bdc300;
+  z-index: -1;
+  transform: translateY(-50%);
+  border-radius: 4px;
+}

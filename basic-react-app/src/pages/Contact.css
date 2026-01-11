@@ -1,0 +1,106 @@
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 20px;
+  margin:120px 0px 0px 0px;
+  background-color: #f0f4f8;
+  height: 90vh;
+  box-sizing: border-box;
+}
+
+.contact-card {
+  display: flex;
+  width: 85%;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Panel */
+.card-left {
+  flex: 1;
+  background-color: #e0f2fe;
+  padding: 24px;
+  color: #1e3a8a;
+}
+
+.card-left h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.card-left p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Right Panel */
+.card-right {
+  flex: 1;
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 24px;
+}
+
+.card-right h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 8px;
+  margin-bottom: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #374151;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #3b82f6;
+}
+
+.contact-form button {
+  background-color: #3b82f6;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-card {
+    flex-direction: column;
+  }
+
+  .card-left,
+  .card-right {
+    padding: 20px;
+  }
+}

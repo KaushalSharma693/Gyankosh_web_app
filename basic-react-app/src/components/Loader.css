@@ -1,0 +1,43 @@
+.loader-container {
+  position: fixed;           
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;    /* Center horizontally */
+  align-items: center;        /* Center vertically */
+  background-color: #111;     /* Optional: dark background */
+  z-index: 9999;   
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #6a0dad, #ff6ec4);
+  border-radius: 0%;
+  transition: all 1s ease;
+  animation: loaderAnim 2s infinite alternate;
+  opacity: 0.4;
+}
+.loader-text{
+  font-size: 60px;
+  color:white;
+  margin:6px;
+}
+
+@keyframes loaderAnim {
+  0% {
+    background: linear-gradient(135deg, #6a0dad, #ff6ec4);
+    border-radius: 10%;
+    transform: rotate(0deg);
+     opacity: 0.4;
+
+  }
+  100% {
+    background: linear-gradient(135deg, #f7b267, #ff69b4);
+    border-radius: 47%;
+    transform: rotate(180deg);
+     opacity: 0.4;
+  }
+}

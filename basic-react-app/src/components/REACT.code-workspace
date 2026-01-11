@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "REACT",
+			"path": "../../.."
+		},
+		{
+			"name": "drive-uploader-backend",
+			"path": "../../../../Gyankosh/drive-uploader-backend"
+		},
+		{
+			"name": "frontend",
+			"path": "../../../../Gyankosh/frontend"
+		}
+	],
+	"settings": {}
+}

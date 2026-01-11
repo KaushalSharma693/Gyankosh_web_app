@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "latest.jpg",
+    "title": "How Reading Changes Your Brain",
+    "date": "June 28, 2025",
+    "author": "Akshat Gupta",
+    "excerpt": "Explore how consistent reading boosts your brain, strengthens memory, and improves emotional well-being."
+  },
+  {
+    "id": 2,
+    "image": "latest2.jpg",
+    "title": "Best Motivational Books for 2025",
+    "date": "June 27, 2025",
+    "author": "Riya Sharma",
+    "excerpt": "Discover top picks to elevate your mindset, push boundaries, and inspire greatness."
+  },
+  {
+    "id": 3,
+    "image": "latest3.jpg",
+    "title": "Why E-books Are Revolutionizing Learning",
+    "date": "June 26, 2025",
+    "author": "Aman Verma",
+    "excerpt": "Learn how digital reading formats are shaping modern education and accessibility."
+  }
+]

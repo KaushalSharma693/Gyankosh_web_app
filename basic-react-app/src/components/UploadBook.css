@@ -1,0 +1,61 @@
+body {
+  background: linear-gradient(120deg, #d6d7db, #f0eeee);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.library-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.upload-box {
+  background: rgb(245, 240, 240);
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  margin-bottom: 40px;
+}
+
+.upload-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #f0f6fd;
+}
+
+.upload-box button {
+  background: #545658;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+.library-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.book-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.download-btn {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+}

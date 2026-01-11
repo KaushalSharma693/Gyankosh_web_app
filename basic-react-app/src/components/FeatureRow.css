@@ -1,0 +1,40 @@
+.feature-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f9f9f9;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 30px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+}
+
+.feature-icon {
+  font-size: 36px;
+  margin-right: 15px;
+}
+
+.feature-text h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #1e3a8a;
+}
+
+.feature-text p {
+  margin: 2px 0 0 0;
+  color: #555;
+  font-size: 14px;
+}

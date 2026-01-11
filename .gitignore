@@ -1,0 +1,68 @@
+#################################
+# Node.js
+#################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#################################
+# Environment variables
+#################################
+.env
+
+#################################
+# Uploads / temp files
+#################################
+uploads/
+data/
+
+#################################
+# Build outputs
+#################################
+dist/
+build/
+
+#################################
+# Credentials / secrets
+#################################
+credentials.json
+*.pem
+*.key
+
+#################################
+# Logs
+#################################
+logs/
+*.log
+
+#################################
+# OS / Editor files
+#################################
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+#################################
+# Python cache (for k.py)
+#################################
+__pycache__/
+*.pyc
+
+# Environment variations
+.env.local
+.env.production
+.env.development
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Vim swap files
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp

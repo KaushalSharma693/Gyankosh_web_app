@@ -1,0 +1,82 @@
+.cart-page {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cart-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cart-table {
+  flex: 2;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-info img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.quantity-buttons button {
+  padding: 0.3rem 0.8rem;
+  margin: 0 0.5rem;
+}
+
+.cart-summary {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h3 {
+  margin-bottom: 1rem;
+}
+
+.checkout-btn {
+  padding: 0.8rem 1.2rem;
+  background-color: #02536f;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.coupon-section {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.coupon-section input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.update-btn {
+  background-color: orange;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  cursor: pointer;
+}
