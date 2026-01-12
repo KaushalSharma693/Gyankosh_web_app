@@ -38,11 +38,11 @@ const AuthPage = () => {
   };
 
   const googleAuth = () => {
-    window.location.href = 'http://localhost:8000/auth/google';
+    window.location.href = 'https://auth-backend-kp6b.onrender.com/auth/google';
   };
 
   const githubAuth = () => {
-    window.location.href = 'http://localhost:8000/auth/github';
+    window.location.href = 'https://auth-backend-kp6b.onrender.com/auth/github';
   };
 
   return (

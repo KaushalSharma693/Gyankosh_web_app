@@ -1,6 +1,6 @@
-import axios from 'axios';
+import axios from "axios";
 
 export default axios.create({
-  baseURL: 'https://auth-backend-kp6b.onrender.com', // change to your backend URL
+  baseURL: "https://auth-backend-kp6b.onrender.com",
   withCredentials: true
 });
