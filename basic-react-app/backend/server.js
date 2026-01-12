@@ -7,7 +7,7 @@ const cors = require('cors');
 const authRoutes = require('./routes/auth');
 
 const app = express();
-const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173';
+const CLIENT_URL = process.env.CLIENT_URL;
 
 // ✅ CORS: allow frontend origin
 app.use(cors({
