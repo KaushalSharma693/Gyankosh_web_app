@@ -8,7 +8,7 @@ export default function UploadBook() {
   const [books, setBooks] = useState([]);
 
   const load = async () => {
-    const res = await axios.get("http://localhost:5000/books");
+    const res = await axios.get("https://gyankosh-web-app.onrender.com/books");
     setBooks(res.data);
   };
 
@@ -24,7 +24,7 @@ export default function UploadBook() {
     fd.append("image", file);
 
     try {
-      await axios.post("http://localhost:5000/upload", fd);
+      await axios.post("https://gyankosh-web-app.onrender.com/upload", fd);
       alert("Uploaded");
       setTitle("");
       setFile(null);
